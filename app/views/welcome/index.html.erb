@@ -1,0 +1,12 @@
+<body>
+
+<center>
+  <h1>Welcome to the thing</h1>
+<br>
+<% if current_user %>
+ <%= current_user.email  %>
+ <%=button_to "Logout", destroy_user_session_path, method: :delete, :class =>"btn btn-default" %>
+ <% else %>
+  <%=button_to "Login", new_user_session_path, :class => "btn btn-default" %>
+  <% end %></center>
+</body>
