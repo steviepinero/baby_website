@@ -6,6 +6,20 @@
 <% if current_user %>
  <%= current_user.email  %>
  <%=button_to "Logout", destroy_user_session_path, method: :delete, :class =>"btn btn-default" %>
+ <div class="card">
+   <img class="card-img-top" src="..." alt="Card image cap" />
+   <div class="card-block">
+     <h4 class="card-title">Example Card</h4>
+     <p class="card-text">
+       Baby is ___ months <b>SWITCH TO BOOTSTRAP 4 ALPHA</b>
+     </p>
+     <a href="#" class="btn btn-primary">See more</a>
+   </div>
+ </div>
+
+ <div class="upload">
+   <%= button_to "Upload Photos", new_picture_path, method: :get, :class => "btn btn-default" %>
+ </div>
  <% else %>
   <%=button_to "Login", new_user_session_path, :class => "btn btn-default" %>
   <% end %></center>
