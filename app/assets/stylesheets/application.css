@@ -19,3 +19,15 @@
  .card {
    background-color: white;
  }
+
+ .shia-right {
+   position: fixed;
+   right: 5px;
+   top: 5px;
+ }
+
+ .shia-left {
+   position: fixed;
+   left: 5px;
+   top: 5px;
+ }
